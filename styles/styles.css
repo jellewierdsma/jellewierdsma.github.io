@@ -1,0 +1,702 @@
+:root {
+    --white: #ffffff;
+    --yellow: #fff48f;
+    --orange: #f8a577;
+    --light_green: #17a2b8;
+    --green: #198597;
+    --red: #a61a0d;
+    --light_brown: #fcf7f1;
+    --brown: #faeddf;
+    --dark_brown: #f0deca;
+    --darker_brown: #bea17d;
+    --darkerer_brown: #9e7e63;
+    --darkest_brown: #7a5932;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    padding-top: 77px;
+    position: relative;
+    overflow-y: scroll;
+    background-color: var(--brown) !important;
+}
+
+body,
+a {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 2;
+    font-weight: 400;
+    color: var(--darkest_brown) !important;
+}
+
+p {
+    margin-bottom: 30px;
+}
+
+#home::before,
+#aboutme::before,
+#skills::before,
+#courses::before,
+#education::before,
+#languages::before {
+  display: block;
+  content: ' ';
+  margin-top: -77px;
+  height: 77px;
+  visibility: hidden;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.bg-light {
+    background-color: var(--brown) !important;
+}
+
+.container-fluid {
+    padding-left: 0!important;
+    padding-right:0!important;
+}
+
+.container-main {
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.container-scroll {
+    padding-left: 0;
+    padding-right: 0;
+    height: 498px;
+}
+
+#home .col-md-4.main {
+    display: none;
+}
+
+#home .col-md-4.phone {
+    background-color: var(--dark_brown) !important;
+    display: flex;
+    padding: 30px 15px 0;
+}
+
+.heading-title {
+    font-size: 50px;
+    font-weight: 200;
+    line-height: 50px;
+    letter-spacing: -4px;
+}
+
+p {
+    font-size: 15px;
+}
+
+#home .row .col-md-8 {
+    display: flex;
+}
+
+#home .row .col-md-8 .row {
+    align-content: center;
+}
+
+#home .row .col-md-8 .row .col-12:first-child p {
+    color: var(--green) !important;
+}
+
+#home .row .col-md-8 .row .col-12:nth-child(2) {
+    margin-bottom: 50px;
+}
+
+.section-header {
+    padding: 30px 15px;
+}
+
+.section-header h2 {
+    color: var(--light_brown) !important;
+    font-size: 40px;
+    font-weight: 300;
+    letter-spacing: -4px;
+    margin: 0;
+    line-height: 1;
+    text-align: center;
+}
+
+#home .row .col-md-8 {
+    padding: 30px 15px;
+}
+
+section .row .section-content {
+    padding: 30px 15px;
+}
+
+#home .row .col-md-8 {
+    background-color: var(--dark_brown) !important;
+}
+
+#aboutme .row .col-sm-8 {
+    background-color: var(--light_brown) !important;
+}
+
+#aboutme .heading-aboutme {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+#skills .row .col-sm-8 {
+    background-color: var(--dark_brown) !important;
+}
+
+#skills .progress {
+    background-color: var(--light_brown) !important;
+}
+
+#skills .progress-bar {
+    background: var(--light_green) !important;
+}
+
+#skills .col-8 {
+    height: 20px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+#skills .col-4 {
+    color: var(--darker_brown) !important;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#skills .heading-skills {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.card {
+    font-weight: 400;
+    border: none;
+}
+
+.card-title {
+    color: var(--darkest_brown) !important;
+    margin: 0 0 3px !important;
+}
+
+.card-subtitle {
+    color: var(--darkest_brown) !important;
+    margin: 0 0 3px !important;
+    font-size: 15px;
+}
+
+.card-text {
+    color: var(--green) !important;
+    line-height: 1;
+}
+
+#courses .row .col-sm-8 {
+    background-color: var(--light_brown) !important;
+}
+
+#courses .heading-courses {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+#courses .card {
+    background-color: var(--light_brown) !important;
+}
+
+#education .row .col-sm-8 {
+    background-color: var(--dark_brown) !important;
+}
+
+#education .heading-education {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+#education .card {
+    background-color: var(--dark_brown) !important;
+}
+
+#languages .row .col-sm-8 {
+    background-color: var(--light_brown) !important;
+}
+
+#languages .progress {
+    background-color: var(--dark_brown) !important;
+}
+
+#languages .progress-bar {
+    background: var(--light_green) !important;
+}
+
+#languages .col-8 {
+    height: 20px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+#languages .col-4 {
+    color: var(--darker_brown) !important;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#languages .heading-languages {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.aboutme {
+    background-color: var(--green) !important;
+}
+
+.skills {
+    background-color: var(--orange) !important;
+}
+
+.courses {
+    background-color: var(--yellow) !important;
+}
+
+.section-header.courses h2 {
+    color: var(--darkerer_brown) !important;
+}
+
+.education {
+    background-color: var(--green) !important;
+}
+
+.languages {
+    background-color: var(--orange);
+}
+
+.fill {
+    height: inherit;
+}
+
+.fill .row {
+    height: inherit;
+}
+
+.fill .row .col-sm-4 {
+    background-color: var(--light_brown) !important;
+}
+
+.fill .row .col-sm-8 {
+    background-color: var(--light_brown) !important;
+}
+
+.navbar {
+    height: 77px;
+    padding: 0 !important;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 5px;
+    padding: 22.5px 0;
+    margin-left: 20px;
+    color: var(--darkest_brown) !important;
+}
+
+.navbar-mail {
+    position: absolute;
+    top: 425px;
+    left: -67px;
+    transform: rotate(-90deg);
+}
+
+.navbar-github {
+    position: absolute;
+    top: 525px;
+    left: -67px;
+    transform: rotate(-90deg);
+}
+
+#myNavbar > .btn:hover {
+    border-color: var(--darkest_brown) !important;
+}
+
+.navbar-toggler {
+    right: 20px;
+    left: auto;
+    border: none;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+label {
+    cursor: pointer;
+    display: inline;
+    margin-bottom: 0;
+}
+
+#toggle div {
+    height: 3px;
+    margin-bottom: 6px;
+    background-color: var(--white) !important;
+    width: 17px;
+    transition: all .3s linear;
+}
+
+body #toggle div {
+    background-color: var(--darkest_brown) !important;
+}
+
+#toggle div:first-of-type {
+    width: 25px;
+}
+
+#toggle div:last-of-type {
+    width: 30px;
+}
+
+#toggle:hover div {
+    width: 30px;
+}
+
+#toggle.on div:first-of-type {
+    transform: rotate3d(0,0,1,45deg) translate(9px,6px);
+    width: 29px !important;
+    opacity: 1;
+}
+
+#toggle.on div {
+    opacity: 0;
+    margin-left: -2px;
+}
+
+#toggle.on div:last-of-type {
+    transform: rotate3d(0,0,1,-45deg) translate(6px,-4px);
+    width: 30px !important;
+    opacity: 1;
+}
+
+.active {
+    color: var(--green) !important;
+}
+
+#navbarCollapse {
+    position: fixed;
+    text-align: center;
+    right: 0;
+    top: 77px;
+    height: 100%;
+    min-width: 300px;
+    max-width: 100%;
+    width: 100%;
+    overflow: auto;
+    padding: 65px 25px 0px;
+    margin: 0 auto;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .3s ease;
+}
+
+#navbarCollapse .navbar-nav {
+    transform: translateX(100%);
+    transition: transform .3s ease, padding .3s ease;
+}
+
+#navbarCollapse.show {
+    opacity: 1;
+}
+
+#navbarCollapse.show .navbar-nav {
+    transform: translateX(0);
+}
+
+#navbarCollapse.show .navbar-nav .nav-item .nav-link:hover {
+    color: var(--green) !important;
+}
+
+footer {
+    color: var(--darkest_brown) !important;
+}
+
+.footer-top {
+    background-color: var(--brown) !important;
+ }
+
+ .footer-top .btn {
+    background-color: var(--dark_brown) !important;
+    border-color: var(--darkest_brown) !important;
+ }
+
+ .footer-top .btn:hover {
+    background-color: var(--red) !important;
+    border-color: var(--red) !important;
+    color: var(--dark_brown) !important;
+ }
+
+.footer-top .dropdown-menu.show {
+    background-color: var(--brown) !important;
+}
+
+.footer-top .dropdown-menu.show .dropdown-item {
+    color: var(--darkest_brown) !important;
+}
+
+.footer-top .dropdown-menu.show .dropdown-item:hover {
+    background-color: var(--red) !important;
+    color: var(--brown) !important;
+}
+
+.footer-bottom .btn {
+    border-color: var(--red) !important;
+}
+
+.footer-bottom, .footer-bottom a {
+    background-color: var(--red) !important;
+    color: var(--brown) !important;
+ }
+ 
+.footer-bottom .btn:hover {
+    border-color: var(--dark_brown) !important;
+}
+
+/* NO JS fallback */
+
+#menutoggle {
+    display: none;
+}
+
+#menutoggle + .collapse {
+    display: none !important;
+    opacity: 0 !important;
+}
+
+#menutoggle:checked + .collapse {
+    display: block !important;
+    opacity: 1 !important;
+}
+
+#menutoggle:checked + .collapse > .navbar-nav {
+    transform: translateX(0);
+}
+
+#menutoggle:checked + .collapse > .navbar-nav > .nav-item > .nav-link:hover {
+    color: var(--red) !important;
+}
+
+#dropdowntoggle {
+    display: none;
+}
+
+.footer-top #dropdowntoggle:checked + .dropdown-menu {
+    background-color: var(--brown) !important;
+    display: block;
+    position: absolute;
+    transform: translate3d(0px, -100px, 0px);
+    top: 0px;
+    left: 0px;
+    will-change: transform;
+}
+
+.footer-top #dropdowntoggle:checked + .dropdown-menu > .dropdown-item {
+    color: var(--darkest_brown) !important;
+}
+
+.footer-top  #dropdowntoggle:checked + .dropdown-menu > .dropdown-item:hover {
+    background-color: var(--red) !important;
+    color: var(--dark_brown) !important;
+}
+
+@media screen and (min-width: 30rem) {
+
+    #navbarCollapse {
+        width: 300px;
+        padding: 0 25px;
+        z-index: 99
+    }
+
+}
+
+@media screen and (min-width: 36rem) {
+
+    .container-scroll {
+        height: 598px;
+    }
+
+    .fill .row .col-sm-4 {
+    background-color: inherit !important;
+    }
+    
+}
+
+@media screen and (min-width: 48rem) {
+
+    .container-scroll {
+        height: 556px;
+    }
+    
+    #home .col-md-4.main {
+        display: flex;
+    }
+
+    .main img {
+        min-width: 256px;
+        min-height: 512px;
+    }
+
+    #home .col-md-4.phone {
+        display: none;
+    }
+
+    .heading-title {
+        font-size: 66px;
+        line-height: 60px;
+    }
+
+    .heading-subtitle {
+        margin-top: 30px;
+    }
+
+    #home .row .col-md-8 {
+        min-width: 510px;
+        min-height: 510px;
+        padding: 6.67%;
+    }
+
+    .section-header {
+        padding: 100px 10px;
+    }
+
+    section .row .section-content {
+        padding: 8.67% 6.67%;
+    }
+
+    #aboutme {
+        min-width: 768px;
+        min-height: 580px;
+    }
+
+    #navbarCollapse {
+        width: 300px;
+        padding: 0 25px;
+        z-index: 99
+    }
+
+}
+
+@media screen and (min-width: 75rem) {
+
+    .container-scroll {
+        height: 486px;
+    }
+
+    .main img {
+        min-width: 380px;
+        min-height: 760px;
+    }
+
+    .heading-title {
+        font-size: 100px;
+        line-height: 94px;
+    }
+
+    #home .row .col-md-8 {
+        min-width: 760px;
+        min-height: 760px;
+        padding: 6.67% 13.33%;
+    }
+    
+    :lang(nl-nl) #home .row .col-md-8 {
+        padding: 6.67% 10%;
+    }
+    
+    .section-header {
+        padding: 150px 10px;
+    }
+
+    .section-header h2 {
+        font-size: 54px;
+    }
+
+    section .row .section-content {
+        padding: 8.67% 12%;
+    }
+
+    #aboutme {
+        min-width: 1140px;
+        min-height: 645px;
+    }
+
+    #navbarCollapse {
+        position: static;
+        padding: 0;
+        z-index: 0
+    }
+
+    .navbar-brand {
+        position: absolute;
+        top: 175px;
+        left: -175px;
+        transform: rotate(-90deg);
+    }
+
+    .navbar-toggler {
+        left: -60px;
+        right: auto;
+        z-index: 2;
+        position: absolute;
+        top: 40px;
+    }
+
+    #navbarCollapse .nav-link {
+        font-size: 15px;
+        letter-spacing: .5px;
+        font-weight: 500;
+        margin: 0;
+        padding: 15px;
+        white-space: nowrap;
+        line-height: 17px;
+        text-decoration: none;
+    }
+
+    #navbarCollapse {
+        opacity: 0;
+        transition: opacity .3s ease;
+    }
+
+    #navbarCollapse .navbar-nav {
+        display: flex !important;
+        flex-basis: auto;
+        padding: 15px;
+        flex-direction: row;
+        position: relative;
+        transform: translateX(0);
+        transform: translateY(-100%);
+        transition: transform .3s ease-in;
+    }
+
+    #navbarCollapse.show {
+        opacity: 1;
+    }
+
+    #navbarCollapse.show .navbar-nav {
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+
+    /* NO JS fallback */
+
+    #toggle:checked + .collapse > .navbar-nav {
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+
+}
