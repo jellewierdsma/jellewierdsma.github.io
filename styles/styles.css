@@ -39,6 +39,8 @@ p {
 #skills::before,
 #courses::before,
 #education::before,
+#portfolio::before,
+#experience::before,
 #languages::before {
   display: block;
   content: ' ';
@@ -225,6 +227,51 @@ section .row .section-content {
     background-color: var(--dark_brown) !important;
 }
 
+#portfolio .row .col-sm-8 {
+    background-color: var(--light_brown) !important;
+}
+
+#portfolio .progress {
+    background-color: var(--light_brown) !important;
+}
+
+#portfolio .progress-bar {
+    background: var(--light_green) !important;
+}
+
+#portfolio .col-8 {
+    height: 20px;
+    font-size: 12px;
+    margin-bottom: 25px;
+}
+
+#portfolio .col-4 {
+    color: var(--darker_brown) !important;
+    line-height: 20px;
+    font-size: 14px;
+    text-align: center;
+}
+
+#portfolio .heading-portfolio {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+#experience .row .col-sm-8 {
+    background-color: var(--dark_brown) !important;
+}
+
+#experience .heading-courses {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+#experience .card {
+    background-color: var(--light_brown) !important;
+}
+
 #languages .row .col-sm-8 {
     background-color: var(--light_brown) !important;
 }
@@ -268,7 +315,19 @@ section .row .section-content {
     background-color: var(--yellow) !important;
 }
 
+.portfolio {
+    background-color: var(--orange) !important;
+}
+
+.experience {
+    background-color: var(--yellow) !important;
+}
+
 .section-header.courses h2 {
+    color: var(--darkerer_brown) !important;
+}
+
+.section-header.experience h2 {
     color: var(--darkerer_brown) !important;
 }
 

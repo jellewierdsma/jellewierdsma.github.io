@@ -88,8 +88,9 @@ $(document).ready(function () {
     requestId = window.requestAnimationFrame(loop);
   };
 
-  const triggers = [].slice.call(document.querySelectorAll('.trigger'));
-  let activeTriggerEle = triggers.length === 0 ? null : triggers[0];
+  // const triggers = [].slice.call(document.querySelectorAll('.trigger'));
+  const triggers = [...document.querySelectorAll('.trigger')];
+  // let activeTriggerEle = triggers.length === 0 ? null : triggers[0];
 
   const clickHandler = function (e) {
 
