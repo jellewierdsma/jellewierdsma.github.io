@@ -6,11 +6,11 @@ $(document).ready(function () {
   })
 
   // Prevents users from unintended page translation via right click
-  $(function () {
-    $(this).bind("contextmenu", function (e) {
-      e.preventDefault();
-    });
-  });
+  // $(function () {
+  //   $(this).bind("contextmenu", function (e) {
+  //     e.preventDefault();
+  //   });
+  // });
 
   // On render, adjust body padding to ensure last Scroll target can reach top of screen
   var lastIdHeight = $('#languages').innerHeight();
@@ -37,11 +37,21 @@ $(document).ready(function () {
 
 
   // Collapses active dropdown menu on max-width: 1200px and any link clicked upon
+  // $(document).click(function (event) {
+  //   var click = $(event.target);
+  //   var _open = $(".navbar-collapse").hasClass("show");
+  //   var _dropdown = window.matchMedia('(max-width: 1200px)').matches;
+  //   if (_open === true && _dropdown === true && !click.hasClass("navbar-toggler")) {
+  //     $(".navbar-toggler").click();
+  //   }
+  // });
+
+    // Collapses active dropdown
   $(document).click(function (event) {
     var click = $(event.target);
     var _open = $(".navbar-collapse").hasClass("show");
-    var _dropdown = window.matchMedia('(max-width: 1200px)').matches;
-    if (_open === true && _dropdown === true && !click.hasClass("navbar-toggler")) {
+    // var _dropdown = window.matchMedia('(max-width: 1200px)').matches;
+    if (_open === true && !click.hasClass("navbar-toggler")) {
       $(".navbar-toggler").click();
     }
   });
