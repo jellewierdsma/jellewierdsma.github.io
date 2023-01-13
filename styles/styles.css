@@ -258,18 +258,22 @@ section .row .section-content {
     line-height: 30px;
 }
 
+#portfolio .row .col-sm-8 {
+    padding: 0;
+}
+
 #experience .row .col-sm-8 {
     background-color: var(--dark_brown) !important;
 }
 
-#experience .heading-courses {
+#experience .heading-experience {
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
 }
 
 #experience .card {
-    background-color: var(--light_brown) !important;
+    background-color: var(--dark_brown) !important;
 }
 
 #languages .row .col-sm-8 {
